@@ -46,7 +46,7 @@ agent = create_agent(llm, tools=tools, system_prompt=system_persona)
 
 # 3. Build the 10-Case Evaluation Harness (AI-7 Requirements)
 test_cases = [
-    {"input": "Find the price of a laptop and calculate total with 10% discount", "expected_substring": "$1166.40"},
+    {"input": "Find the price of a laptop and calculate total with 10% discount", "expected_substring": "$1,166.40"},
     {"input": "Search for headphones and apply a 20% discount", "expected_substring": "$129.60"},
     {"input": "What is the price of a smartwatch?", "expected_substring": "not found"},
     {"input": "Look up a keyboard and calculate cost with 0% discount", "expected_substring": "$86.40"},
