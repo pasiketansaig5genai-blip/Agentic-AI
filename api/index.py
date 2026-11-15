@@ -70,6 +70,7 @@ async def chat_endpoint(req: QueryRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/", response_class=HTMLResponse)
+@app.get("/api/index", response_class=HTMLResponse)
 async def home():
     return """
     <!DOCTYPE html>
